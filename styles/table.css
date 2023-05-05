@@ -1,0 +1,101 @@
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+tr {
+    height: 3rem;
+    max-height: 3rem;
+    width: 100%;
+}
+  
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    height: 3rem;
+  }
+    
+tr:hover {background-color: #ddd;}
+  
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: var(--main-blue);
+    color: white;
+  }
+
+input, select {
+    width: 100%;
+    padding: .125rem .50rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.table__pagination--container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination__buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.pagination__buttons > button {
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--main-blue);
+}
+
+.pagination__buttons > button:enabled {
+    background-color: var(--main-blue);
+    color: #f2f2f2;
+}
+
+.pagination__buttons > button:disabled {
+    background-color: #ccc;
+    color: gray;
+    border: 1px solid gray;
+}
+
+.pagination__buttons > .pageNumber:disabled {
+    background-color: #f2f2f2;
+    color: var(--main-blue);
+    border: 1px solid var(--main-blue);
+}
+
+td > button {
+    color: #f2f2f2;
+    font-size: .75rem;
+    padding: .125rem .5rem;
+    background-color: var(--main-blue);
+    border: 1px solid var(--main-blue);
+    border-radius: 25%;
+}
+
+.table_input > input {
+    width: 90%;
+}
+
+.table_input {
+    width: 20rem;
+    min-width: 12rem;
+}
+
+.table_input-small {
+    width: 12rem;
+    min-width: 6rem;
+}
+
+.table__actions > button {
+    width: 5rem;
+}
